@@ -58,5 +58,8 @@ git remote add origin "git@github.com:august-sai/pttsoftware.git"
 (check address)git remote -v
 
 =secon step(always)
-git status
+git status (red color)
 git add -A
+git status (green color)
+git commit -m "firstproject 12/12/2022"
+git push -u origin master
