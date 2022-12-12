@@ -1,0 +1,62 @@
+To get ssh key to connect with git-hub
+
+
+1. ssh-keygen
+2. go to 
+
+	C:/Users/Dell/.ssh
+
+3. open id_rsa.pub with notepad
+
+4.copy the ssh key
+
+5. goto github setting under profile
+
+6. goto ssh and gpg key
+
+7. paste in ssh key and add it
+
+NOTE!
+
+if you want to re generate ssh key
+
+first delete .ssh folder in C:/Users/Dell/.ssh
+
+
+Don't get key gen one after another between 15 minutes
+
+------------------------------------------
+
+Right click on desktop screen
+
+click git bash here
+
+
+To test version of git -->  git --version
+
+
+=> One time install
+git config --global user.name "saiwaiyantun"
+
+=> check user name
+git config user.name
+
+=> add email
+git config --global user.email "augusttarak15@gmail.com"
+
+=> check email address
+git config user.email
+
+=check ssh key connected or not
+ssh -T git@github.com
+
+=> Always
+
+=first step(one time for one project)
+git init
+git remote add origin "git@github.com:august-sai/pttsoftware.git"
+(check address)git remote -v
+
+=secon step(always)
+git status
+git add -A
